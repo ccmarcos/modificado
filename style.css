@@ -1,0 +1,220 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.scrol{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.container{
+  width:500px;
+  height:500px;
+  position:absolute;
+  top: 100px;
+  left:50%;
+  margin-left: -250px;  /* 50% del ancho de la div en px */
+}
+
+#titulo{
+	text-align: center;
+	font-size: 2.5em;
+	color:#9a9a9a;
+}
+.tarea{
+  width: 400px;
+  color: #55555c;
+  margin-bottom: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+}
+
+input[type="text"],input[type="password"],textarea[name="description"],textarea[name="query"],
+textarea[name="view"],select[name="db"], select[name="query_id"] {
+  height: 28px;
+  width: 200px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border: 1px solid #BDC2C9;
+}
+
+select[name="ui"], select[name="mime"]{
+  height: 31px;
+  width: 212px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border: 1px solid #BDC2C9;
+}
+
+textarea[name="content"]{
+  height: 500px;
+  width: 75%;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border: 1px solid #BDC2C9;
+}
+.contenedor-text-area{
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  top:385px;
+}
+
+input[type="text"]:focus,input[type="password"]:focus,input[type="file"]:focus,
+textarea[name="description"]:focus,textarea[name="query"]:focus,textarea[name="view"]:focus,
+select[name="db"]:focus,select[name="query_id"]:focus, select[name="ui"]:focus, select[name="mime"]:focus{
+outline:0px;
+-webkit-box-shadow: 0 0 1px 1px #6392c5;
+-moz-box-shadow: 0 0 1px 1px #6392c5;
+box-shadow: 0 0 1px 1px #6392c5;
+}
+
+.texto{
+  font-size: 17px;
+  float: left;
+  width: 200px;
+  text-align: right;
+  padding-right: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#primer-form{
+  padding-top: 35px;
+}
+
+.btn-salir{
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #0f75e0;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.div-registrar{
+  position: absolute;
+  right: 0;
+}
+
+.btn-registrar{
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #01579b;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-registrar:hover{
+  background-color: #3b80ee;
+}
+
+.btn-salir:hover{
+  background-color: #4965b5;
+}
+
+/*Estilos para error.html*/
+.body{
+  background-color: #1f1f38;
+}
+
+.contenedor-error{
+  width:500px;
+  height:500px;
+  position:absolute;
+  top: 100px;
+  left:50%;
+  margin-left: -250px;  /* 50% del ancho de la div en px */
+}
+
+.error{
+  text-align: center;
+  color: #f06b6c;
+  font-family: 'Nunito', sans-serif;
+}
+
+.h1{
+  font-size: 50px;
+}
+.h2{
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+#midiv1{
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  background-color: #454562;
+  width: 110px;
+  height: 170px;
+  z-index: 2;
+  transform: skewY(8deg);
+  -webkit-transform: skewY(8deg);
+  -moz-transform: skewY(8deg);
+  -o-transform: skewY(8deg);
+
+  box-shadow: 5px -2px 0 #1f1f38;
+  -webkit-box-shadow: 5px -2px 0 #1f1f38;
+  -moz-box-shadow: 5px -2px 0 #1f1f38;
+  -o-box-shadow: 5px -2px 0 #1f1f38;
+}
+
+#midiv2{
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 32%;
+  margin-left: -68px;
+  background-color: #f06b6c;
+  width: 110px;
+  height: 170px;
+}
+
+#div1 {
+    position: relative;
+    top: 88px;
+    left: 220px;
+    width: 60px;
+    height: 150px;
+    margin: 50px;
+    padding: 10px;
+    -webkit-perspective: 10px; /* Chrome, Safari, Opera */
+    -webkit-perspective-origin: 10% 10%; /* Chrome, Safari, Opera */
+    perspective: 10px;
+    perspective-origin: 10% 10%;
+}
+
+#div2 {
+    padding: 50px;
+    position: absolute;
+    background-color: #5e3648;
+    -webkit-transform: rotateX(80deg); /* Chrome, Safari, Opera */
+    transform: rotateX(80deg);
+}
+
+.circulo {
+    position: absolute;
+    z-index: 3;
+    top: 240px;
+    left: 250px;
+     width: 18px;
+     height: 18px;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     background: #1f1f38;
+}
+
+.subir{
+ padding-right: 90px;
+}

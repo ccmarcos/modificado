@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Subir documento</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<script type="text/javascript" src="/codemirror-5.23.0/lib/codemirror.js"></script>
+	<link rel="stylesheet" type="text/css" href="style_menu.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="/codemirror-5.23.0/lib/codemirror.css">
+	<script type="text/javascript" src="/codemirror-5.23.0/mode/javascript/javascript.js"></script>
+	<script type="text/javascript" src="/javascripts/mainScript.js"></script>
+	<script type="text/javascript" src="/javascripts/documentScript.js"></script>
+</head>
+<body class="scrol">
+	<nav>
+		<div id="nav_wraper">
+		<ul>
+			<li><a href="#" class="alinear">Lista<span class="icon-chevron-small-down img"></span></a>
+			<ul>
+				<li><a href="/db"><strong>Conexiones</strong></a></li>
+				<li><a href="/query"><strong>Consultas</strong></a></li>
+				<li><a href="/view"><strong>Vistas</strong></a></li>
+			</ul>
+		</li>
+			<li><a href="#" class="alinear">Nueva<span class="icon-chevron-small-down img"></span></a>
+			<ul>
+				<li><a href="/db/new_db"><strong>Base de datos</strong></a></li>
+				<li><a href="/query/new_query"><strong>Consulta</strong></a></li>
+				<li><a href="/view/new_view"><strong>Vista</strong></a></li>
+				<li><a href="/ui/new_ui"><strong>UI</strong></a></li>
+			</ul>
+		</li>
+			<li><a href="#" class="alinear">Subir<span class="icon-chevron-small-down img"></span></a>
+			<ul>
+				<li><a href="/ui/new_document"><strong>Documento</strong></a></li>
+			</ul>
+		</li>
+			<li><a href="/config" class="alinear">Configuración</a></li>
+			<div class="salir">
+				<li><a href="{{log_route}}" title="{{titulo}}"><span class="icon-log-out"></span></a></li>
+			</div>
+		</ul>
+	</div>
+	</nav>
+	<br>
+	<p id="titulo">Consultor</p>
+	<div class="container">
+		<p class="tarea"><strong>Documento</strong></p>
+		<hr size="1px" color="BDC2C9" class="linea"/>
+		<form method="post" action="/ui/new_document" enctype="multipart/form-data">
+			<div class="form-input" id="primer-form">
+				<p class="texto">Nombre</p>
+				<input type="text" name="name"><br>
+			</div>
+			<p class="texto">UI</p>
+			<div class="form-input">
+				<select name="ui"></select>
+			</div>
+			<p class="texto">Mime</p>
+			<div class="form-input">
+				<select name="mime">
+					<option value="text/html">text/html</option>
+					<option value="text/css">text/css</option>
+					<option value="text/javascript">text/javascript</option>
+				</select>
+			</div>
+			<p class="texto">Descripci&oacute;n</p>
+			<div class="form-input">
+				<textarea name="description"></textarea><br>
+			</div>
+
+		</form>
+	</div>
+	<div class="contenedor-text-area">
+		<p class="texto">Archivo</p>
+		<div class="form-input">
+			<textarea name="content"></textarea><br>
+		</div>
+		<br>
+		<div class="div-registrar subir">
+			<input type="submit" value="Subir" class="btn-registrar">
+		</div>
+	</div>
+</body>
+</html>
